@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+    <title> Your Profile </title>
+</head>
+<body>
+    <header>
+        <!-- This contains the nav -->
+        <a class="logo" href="/home"><img src="http://drive.google.com/uc?export=view&id=161fBYCoAU-1Rhz17Lr3C-a3nxr3ZQ8s_" alt="Logo"></a> 
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- This is the feed -->
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/shelf">BookShelf</a></li>
+                <li><a href="/YourShelf">Profile</a></li> <!-- This is where the profile of the user can be seen -->
+                <li><a href="/">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <article>
+        <% if(numOfBooks === 2) { %>
+            <div class="left-article">
+                This is where one of your books would appear
+            </div>
+    
+            <div class="right-article">
+                This is where one of your books would appear here
+            </div>
+    
+            <div class="left-article">
+                This is where one of your books would appear
+            </div>
+    
+            <div class="right-article">
+                This is where one of your books would appear here
+            </div>
+    
+            <div class="left-article">
+                This is where one of your books would appear
+            </div>
+    
+            <div class="right-article">
+                This is where one of your books would appear here
+            </div>
+    
+            <div class="left-article">
+                This is where one of your books would appear
+            </div>
+    
+            <div class="right-article">
+                This is where one of your books would appear here
+            </div>
+        <% } else if(numOfBooks === 1) { %>
+            <div class="feed">
+                <div class="post">
+                    This is the only book you have   
+                </div>    
+            </div>
+        <% } else { %>
+            <div class="feed">
+                <div class="post">
+                    You have no books    
+                </div>    
+            </div>
+        <% } %>
+    </article>
+
+    <footer>
+        <!-- This is where the copyrights are -->
+        <a href=#> About Us </a> || <a href=#> Contatct Us </a> || <a href=#> Support Us </a> 
+    </footer>
+</body>
+</html>
